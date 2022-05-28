@@ -1,0 +1,175 @@
+<!DOCTYPE html><!--Informe le navigateur que le code est en HTML5-->
+<html lang="fr"><!--root ou racine de la page-->
+	<head>
+		<meta charset="utf-8"><!--Metadonnée importante car l'attribut charset donne le type d'encodage des caractères en utf-8-->
+		<meta name="viewport" content="width=device-width, inial-scale=1">
+		<title>ohmyfood</title><!--Titre est obligatoire car c'est la référence qui permet de rechercher la page-->
+		<link rel="stylesheet" type="text/css" href="./css/style.css"><!--Relie la page des styles à cette page WEB-->
+		<meta lang="en" name="description" content="Booki helps you to find your next rental lodging and activities in the city of your choice. Accommodations can also be filtered by theme, for example their budget or their atmosphere."><!--Cette metadonnee permet aux assistants vocaux de lire la description de la page aux personnes souffrants d'handicape et aux moteurs de recherches de donner un descriptif de la page-->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" /><!-- lien permettant de faire fonctionner Font Awesome -->
+	</head>
+
+    <body><!--Contenu visible de la page Web-->
+        <header><!--balise sémantique : balise bloc specialisé qui a pour atout de clarifier le code pour les futures reprises de code et pour les navigateurs, il spécifie le rôle de cette balise. -->
+			<div id="logo">
+				 <img id="Logo" src="./images/logo/ohmyfood.png" alt="logo de ohmyfood" />
+			</div>
+			
+            <div id="form"><!-- Formulaire de recherche -->
+				<form method="post" action="traitement.php">
+<!--Traitement.php est un fichier fictif qui permettrait d'effectuer la recherche demandée-->
+                    
+                    <div class="darkGrayBackground">
+                        <div id="location"><!-- icon de  localisation via Font Awesome -->
+                            <i id="lgLocationIcon" class="fa-solid fa-location-dot fa-lg"></i>
+                        </div>	
+                        
+                        <input type="text" name="ville" placeholder="Paris, Belleville" /> 
+                    </div>
+
+                        <!--name="ville" va permettre de nommer le champs pour le traiter après avec traitement.php  -->
+                    <div class="title">
+                        <h1>Réserver le menu qui vous convient</h1>
+                        <h2>Découvrer des restaurants d'exception, sélectionnés par nos soins</h2>
+                    </div>
+
+                    <button lang="fr" type="submit">
+                        <span id="search">Explorer nos restaurants</span>
+                    </button>
+                
+				</form>
+            </div> 
+
+		</header>
+
+        <main><!--balise sémantique : balise bloc specialisé qui a pour atout de clarifier le code pour les futures reprises de code et pour les navigateurs, il spécifie le rôle de cette balise. -->
+            <section id="filter"><!--balise sémantique : balise bloc specialisé qui a pour atout de clarifier le code pour les futures reprises de code et pour les navigateurs, il spécifie le rôle de cette balise. -->
+				<div class="titleFilter">
+					<h3>Fonctionnement</h3>
+				</div>
+
+				<div id="filterContainer">
+					<div id="restaurantChoise" class="filter">
+						<div class="purpleNumber">
+                            <p>1</p>
+                        </div>
+						<i class="fa-solid fa-mobile-screen-button"></i>
+                        <h4>Choisissez un restaurant</h4>
+					</div>
+
+					<div id="menuComposition" class="filter">
+						<div class="purpleNumber">
+                            <p>2</p>
+                        </div>
+                        <i class="fa-solid fa-list-ul"></i>
+						<h4>Composez votre menu</h4>
+					</div>
+						
+					<div id="onSite" class="filter">
+						<div class="purpleNumber">
+                            <p>3</p>
+                        </div>
+                        <i class="fa-solid fa-store"></i>
+						<h4>Dégustez au restaurant</h4>
+					</div>
+				</div>
+			</section>
+
+            <section id="Restaurants">
+                <header class="titleContainerRestaurants">
+                    <h5>Restaurants</h5>
+                </header>
+
+                <div id="restaurantsContainer">
+                    <a class="restaurantsCard" href="./pages/lapalettedugout.html">
+                        <img class="imgOfRestaurants" src="./images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" />
+                        
+                        <p class="greenPin">Nouveau</p>
+
+                        <div class="descriptionsRestaurants">
+                            <div class="infoRestaurents">
+                                <p><span class="blackBolder">La palette du goût</span></p>
+                                <p>Ménilmontant</p>
+                            </div>
+
+                            <div class="heart">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a class="restaurantsCard" href="./pages/lanoteenchantee.html">
+                        <img class="imgOfRestaurants" src="./images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" />
+                         
+                        <p class="greenPin">Nouveau</p>
+
+                        <div class="descriptionsRestaurants">
+                            <div class="infoRestaurents">
+                                <p><span class="blackBolder">La note enchantée</span></p>
+                                <p>Charonne</p>
+                            </div>
+
+                            <div class="heart">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a class="restaurantsCard" href="./pages/alafrancaise.html">
+                        <img class="imgOfRestaurants" src="./images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" />
+                                
+                        <div class="descriptionsRestaurants">
+                            <div class="infoRestaurents">
+                                <p><span class="blackBolder">À la Française</span></p>
+                                <p>Cité Rouge</p>
+                            </div>
+
+                            <div class="heart">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a class="restaurantsCard" href="./pages/ledelicedessens.html">
+                        <img class="imgOfRestaurants" src="./images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" />
+                                
+                        <div class="descriptionsRestaurants">
+                            <div class="infoRestaurents">
+                                <p><span class="blackBolder">Le délice des sens</span></p>
+                                <p>Folie-Méricourt</p>
+                            </div>
+
+                            <div class="heart">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                        </div>
+                    </a>
+
+                </div>              
+            </section>
+
+        </main>
+
+
+		<footer><!--balise sémantique : balise bloc specialisé qui a pour atout de clarifier le code pour les futures reprises de code et pour les navigateurs, il spécifie le rôle de cette balise. -->
+            <h6>ohmyfood</h6>
+                <ul class="ulFooter">
+                    <li class="bold">
+                        <a class="bulletsPointFooter" href="#">
+                            <i class="fa-solid fa-utensils"></i>
+                            <p>Proposer un restaurant</p>
+                        </a>
+                    </li>
+                    <li class="bold">
+                        <a class="bulletsPointFooter" href="#">
+                            <i class="fa-solid fa-handshake-angle"></i>
+                            <p>Devenir partenaire</p>
+                        </a>
+                    </li>
+                    <li><a class="bulletsPointFooter" href="#">Mentions légales</a></li>
+                    <li><a class="bulletsPointFooter" href="#">Contact</a></li>
+                </ul>
+		</footer>
+
+	</body>
+</html>
