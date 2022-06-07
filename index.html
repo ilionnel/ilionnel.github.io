@@ -4,15 +4,15 @@
 		<meta charset="utf-8"><!--Metadonnée importante car l'attribut charset donne le type d'encodage des caractères en utf-8-->
 		<meta name="viewport" content="width=device-width, inial-scale=1">
 		<title>ohmyfood</title><!--Titre est obligatoire car c'est la référence qui permet de rechercher la page-->
-		<link rel="stylesheet" type="text/css" href="./css/style.css"><!--Relie la page des styles à cette page WEB-->
+		<link rel="stylesheet" type="text/css" href="./sass/main.css"><!--Relie la page des styles à cette page WEB-->
 		<meta lang="en" name="description" content="Booki helps you to find your next rental lodging and activities in the city of your choice. Accommodations can also be filtered by theme, for example their budget or their atmosphere."><!--Cette metadonnee permet aux assistants vocaux de lire la description de la page aux personnes souffrants d'handicape et aux moteurs de recherches de donner un descriptif de la page-->
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" /><!-- lien permettant de faire fonctionner Font Awesome -->
 	</head>
 
     <body><!--Contenu visible de la page Web-->
         <header><!--balise sémantique : balise bloc specialisé qui a pour atout de clarifier le code pour les futures reprises de code et pour les navigateurs, il spécifie le rôle de cette balise. -->
-			<div id="logo">
-				 <img id="Logo" src="./images/logo/ohmyfood.png" alt="logo de ohmyfood" />
+			<div class="logo">
+				 <img id="imgLogo" src="./images/logo/ohmyfood.png" alt="logo de ohmyfood" />
 			</div>
 			
             <div id="form"><!-- Formulaire de recherche -->
@@ -25,6 +25,11 @@
                         </div>	
                         
                         <input type="text" name="ville" placeholder="Paris, Belleville" /> 
+                    </div>
+
+                    <div class="map">
+                        
+
                     </div>
 
                         <!--name="ville" va permettre de nommer le champs pour le traiter après avec traitement.php  -->
@@ -43,12 +48,12 @@
 		</header>
 
         <main><!--balise sémantique : balise bloc specialisé qui a pour atout de clarifier le code pour les futures reprises de code et pour les navigateurs, il spécifie le rôle de cette balise. -->
-            <section id="filter"><!--balise sémantique : balise bloc specialisé qui a pour atout de clarifier le code pour les futures reprises de code et pour les navigateurs, il spécifie le rôle de cette balise. -->
-				<div class="titleFilter">
+            <section class="manual"><!--balise sémantique : balise bloc specialisé qui a pour atout de clarifier le code pour les futures reprises de code et pour les navigateurs, il spécifie le rôle de cette balise. -->
+				<div class="manual manual__title">
 					<h3>Fonctionnement</h3>
 				</div>
 
-				<div id="filterContainer">
+				<div class="manual manual__Container">
 					<div id="restaurantChoise" class="filter">
 						<div class="purpleNumber">
                             <p>1</p>
@@ -82,7 +87,7 @@
 
                 <div id="restaurantsContainer">
                     <a class="restaurantsCard" href="./pages/lapalettedugout.html">
-                        <img class="imgOfRestaurants" src="./images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" />
+                        <!-- <img class="imgOfRestaurants" src="./images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" /> -->
                         
                         <p class="greenPin">Nouveau</p>
 
@@ -99,7 +104,7 @@
                     </a>
 
                     <a class="restaurantsCard" href="./pages/lanoteenchantee.html">
-                        <img class="imgOfRestaurants" src="./images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" />
+                        <!-- <img class="imgOfRestaurants" src="./images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" /> -->
                          
                         <p class="greenPin">Nouveau</p>
 
@@ -116,7 +121,7 @@
                     </a>
 
                     <a class="restaurantsCard" href="./pages/alafrancaise.html">
-                        <img class="imgOfRestaurants" src="./images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" />
+                        <!-- <img class="imgOfRestaurants" src="./images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" /> -->
                                 
                         <div class="descriptionsRestaurants">
                             <div class="infoRestaurents">
@@ -131,7 +136,7 @@
                     </a>
 
                     <a class="restaurantsCard" href="./pages/ledelicedessens.html">
-                        <img class="imgOfRestaurants" src="./images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" />
+                        <!-- <img class="imgOfRestaurants" src="./images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" /> -->
                                 
                         <div class="descriptionsRestaurants">
                             <div class="infoRestaurents">

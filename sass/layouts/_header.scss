@@ -1,0 +1,9 @@
+.logo{
+    @include displayCentre;
+}
+
+header{
+    width: 90%;
+    max-width: inherit;
+    background-color: $tertiary;
+}
