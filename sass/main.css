@@ -1,21 +1,16 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
-body {
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Shrikhand&display=swap");
+body, main, footer {
   width: 100%;
   max-width: 768px;
-  height: 6000px;
-  font-family: 'Roboto', sans-serif;
   margin: 0px;
   padding: 0px;
 }
 
-main {
-  width: 100%;
-  max-width: inherit;
+body {
+  height: 6000px;
 }
 
 footer {
-  width: 100%;
-  max-width: 768px;
   background-color: #363333;
   color: white;
   display: -webkit-box;
@@ -25,6 +20,16 @@ footer {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+h1 {
+  font-family: 'Shrikhand', cursive;
+  font-weight: 700;
+  font-size: 52px;
+}
+
+p {
+  font-family: 'Roboto', sans-serif;
 }
 
 .logo {
